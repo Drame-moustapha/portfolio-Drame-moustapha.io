@@ -192,7 +192,7 @@ footer {
   border-radius: 50%;
   box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.15);
 }
-P {
+p {
     color: var(--text); /* TEXTE BLANC EN MODE SOMBRE */
 }
 
