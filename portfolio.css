@@ -1,17 +1,4 @@
 :root {
-  /* Mode sombre (par défaut) */
-  --bg: #0f172a;
-  --panel: #111827;
-  --text: #e5e7eb;
-  --muted: #9ca3af;
-  --accent: #38bdf8;
-  --accent-2: #22c55e;
-  --card: #020617;
-  --linkedin: #0077b5;
-}
-
-/* Mode clair */
-body.light-mode {
   --bg: #f9fafb;
   --panel: #ffffff;
   --text: #111827;
@@ -28,7 +15,8 @@ body {
     "Helvetica Neue", Arial;
   color: var(--text);
   background: var(--bg);
-  transition: background 0.3s ease, color 0.3s ease;
+  line-height: 1.6;
+  font-size: 16px;
 }
 
 a {
@@ -47,7 +35,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(2, 6, 23, 0.8);
+  background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--card);
 }
@@ -61,23 +49,6 @@ nav a:hover {
   color: var(--text);
 }
 
-/* Bouton toggle */
-.theme-toggle {
-  cursor: pointer;
-  padding: 8px 12px;
-  border-radius: 8px;
-  background: var(--panel);
-  color: var(--text);
-  border: 1px solid var(--muted);
-  font-size: 14px;
-  transition: background 0.3s ease, color 0.3s ease;
-}
-
-.theme-toggle:hover {
-  background: var(--accent);
-  color: #fff;
-}
-
 /* Hero */
 .hero {
   padding: 72px 0 48px;
@@ -88,7 +59,7 @@ nav a:hover {
   max-width: 320px;
   aspect-ratio: 1;
   border-radius: 24px;
-  background: linear-gradient(135deg, #0b122a, #020617);
+  background: linear-gradient(135deg, #e5e7eb, #f3f4f6);
   border: 1px solid var(--card);
   margin-left: auto;
 }
@@ -96,6 +67,70 @@ nav a:hover {
 /* Sections */
 section {
   padding: 56px 0;
+}
+
+/* Cards */
+.card {
+  border: none;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+
+  section {
+    padding: 32px 0;
+  }
+
+  .hero {
+    padding: 48px 0 32px;
+    text-align: center;
+  }
+
+  .avatar {
+    margin: 0 auto;
+    max-width: 200px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .card-body h5 {
+    font-size: 1.1rem;
+  }
+
+  .card-body p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
 }
 
 .section-title {
