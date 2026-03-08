@@ -23,7 +23,6 @@
       <a href="#formations">Formation</a>
       <a href="#contact">Contact</a>
       <button id="lang-toggle" class="btn btn-outline-secondary btn-sm">🇫🇷 FR</button>
-      <button id="theme-toggle" class="btn btn-outline-dark btn-sm">🌙</button>
     </nav>
   </div>
 </header>
@@ -120,6 +119,32 @@
               data-en="LSTM Prediction"></h5>
           <p data-fr="Modélisation de données séquentielles avec réseaux LSTM."
              data-en="Sequential data modeling using LSTM networks."></p>
+          <span class="badge bg-secondary">TensorFlow</span>
+          <span class="badge bg-secondary">Keras</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 data-fr="1️⃣ Réseaux de Neurones Artificiels (ANN) avec Iris"
+              data-en="1️⃣ Artificial Neural Networks (ANN) with Iris Dataset"></h5>
+          <p data-fr="Application des réseaux de neurones artificiels pour la classification sur le dataset Iris, incluant Perceptron et MLP."
+             data-en="Application of artificial neural networks for classification on the Iris dataset, including Perceptron and MLP."></p>
+          <span class="badge bg-secondary">Python</span>
+          <span class="badge bg-secondary">Scikit-learn</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 data-fr="2️⃣ RNN et LSTM avec California Housing"
+              data-en="2️⃣ RNN and LSTM with California Housing Dataset"></h5>
+          <p data-fr="Modélisation de données séquentielles avec RNN et LSTM pour la prédiction des prix immobiliers en Californie."
+             data-en="Sequential data modeling with RNN and LSTM for predicting housing prices in California."></p>
           <span class="badge bg-secondary">TensorFlow</span>
           <span class="badge bg-secondary">Keras</span>
         </div>
@@ -257,9 +282,6 @@
 <!-- Scripts -->
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
-
-  const themeBtn = document.getElementById("theme-toggle");
-  themeBtn.onclick = () => document.body.classList.toggle("light-mode");
 
   const langBtn = document.getElementById("lang-toggle");
   let lang = localStorage.getItem("lang") || "fr";
