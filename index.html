@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <title>Portfolio — Moustapha DRAME </title>
+  <meta name="description" content="Portfolio professionnel de Moustapha DRAME, Ingénieur Full Stack & Data / IA" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+
+<body class="bg-[var(--bg)] text-[var(--text)] transition">
+
+<!-- Header -->
+<header class="sticky top-0 bg-[var(--panel)]/80 backdrop-blur-md border-b z-10">
+  <div class="container d-flex justify-content-between align-items-center py-3">
+    <h1 class="fw-bold">Moustapha DRAME</h1>
+    <nav class="d-flex  flex-wrap  gap-3 align-items-center">
+      <a href="#experiences">Expériences</a>
+      <a href="#projets">Projets</a>
+      <a href="#competences">Compétences</a>
+      <a href="#certificats">Certificats</a>
+      <a href="#formations">Formation</a>
+      <a href="#contact">Contact</a>
+      <button id="lang-toggle" class="btn btn-outline-secondary btn-sm">🇫🇷 FR</button>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="container py-5 d-flex flex-wrap align-items-center gap-4">
+  <div class="flex-fill">
+    <span class="badge bg-success">Disponible</span>
+    <h2 class="mt-3">Ingénieur Full Stack & Data / IA</h2>
+
+    <p class="text-muted"
+      data-fr="Ingénieur en Génie Logiciel spécialisé en Data Science & Intelligence Artificielle, avec une solide expérience en développement Full-Stack et Data Engineering. Passionné par l’application de l’IA à des problématiques réelles. À la recherche d’un stage ou contrat ."
+      data-en="Software Engineer specialized in Data Science & Artificial Intelligence, with strong experience in Full-Stack development and Data Engineering. Passionate about applying AI to real-world challenges. Seeking an internship or junior position .">
+    </p>
+
+    <div class="d-flex gap-2 mt-3">
+      <a class="btn btn-primary" href="#contact">Contact</a>
+      <a class="btn btn-outline-info" href="#projets">Projets</a>
+      <a class="btn btn-success" href="CV_Moustapha_DRAME.pdf" target="_blank">CV</a>
+      <a class="btn btn-info" href="https://www.linkedin.com/in/moustaphadramekandji/" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <img src="moustaphaDrame.jpg" alt="Photo de Moustapha DRAME"
+       class="rounded-3 shadow-lg" width="260" />
+</section>
+
+<!-- EXPERIENCES -->
+<section id="experiences" class="container py-5">
+  <h2 data-fr="Expériences professionnelles" data-en="Professional Experience"></h2>
+
+  <div class="card mt-4">
+    <div class="card-body">
+      <h5 data-fr="Développeur Full-Stack Java / React"
+          data-en="Full-Stack Java / React Developer"></h5>
+
+      <p class="text-muted"
+         data-fr="Université Assane Seck – Ziguinchor | Août 2024 – Janvier 2025"
+         data-en="Assane Seck University – Ziguinchor | Aug 2024 – Jan 2025"></p>
+
+      <ul
+        data-fr="
+          <li>Développement d’une plateforme de gestion des recrutements académiques</li>
+          <li>Conception d’API REST sécurisées (Spring Boot, Spring Security)</li>
+          <li>Développement du frontend avec React.js</li>
+          <li>Mise en place CI/CD avec GitLab</li>
+          <li>Méthodologie Agile / Scrum</li>"
+        data-en="
+          <li>Development of an academic recruitment management platform</li>
+          <li>Secure REST API design using Spring Boot & Spring Security</li>
+          <li>Frontend development with React.js</li>
+          <li>CI/CD pipeline using GitLab</li>
+          <li>Agile / Scrum methodology</li>">
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PROJETS -->
+<section id="projets" class="container py-5">
+  <h2 data-fr="Projets" data-en="Projects"></h2>
+
+  <div class="row g-4 mt-3">
+    <div class="col-md-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 data-fr="Plateforme de recrutement"
+              data-en="Recruitment Platform"></h5>
+          <p data-fr="Application web de gestion des recrutements académiques."
+             data-en="Web application for academic recruitment management."></p>
+          <span class="badge bg-secondary">Spring Boot</span>
+          <span class="badge bg-secondary">React</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 data-fr="Analyse Big Data médias"
+              data-en="Media Big Data Analysis"></h5>
+          <p data-fr="Scraping d’articles, stockage Cassandra, pipeline ETL."
+             data-en="Article scraping, Cassandra storage, ETL pipeline."></p>
+          <span class="badge bg-secondary">Python</span>
+          <span class="badge bg-secondary">Cassandra</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 data-fr="Prédiction avec LSTM"
+              data-en="LSTM Prediction"></h5>
+          <p data-fr="Modélisation de données séquentielles avec réseaux LSTM."
+             data-en="Sequential data modeling using LSTM networks."></p>
+          <span class="badge bg-secondary">TensorFlow</span>
+          <span class="badge bg-secondary">Keras</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 data-fr="Réseaux de Neurones Artificiels (ANN) avec Iris"
+              data-en=" Artificial Neural Networks (ANN) with Iris Dataset"></h5>
+          <p data-fr="Application des réseaux de neurones artificiels pour la classification sur le dataset Iris, incluant Perceptron et MLP."
+             data-en="Application of artificial neural networks for classification on the Iris dataset, including Perceptron and MLP."></p>
+          <span class="badge bg-secondary">Python</span>
+          <span class="badge bg-secondary">Scikit-learn</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 data-fr=" RNN et LSTM avec California Housing"
+              data-en=" RNN and LSTM with California Housing Dataset"></h5>
+          <p data-fr="Modélisation de données séquentielles avec RNN et LSTM pour la prédiction des prix immobiliers en Californie."
+             data-en="Sequential data modeling with RNN and LSTM for predicting housing prices in California."></p>
+          <span class="badge bg-secondary">TensorFlow</span>
+          <span class="badge bg-secondary">Keras</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPETENCES (INCHANGÉES) -->
+<section id="competences" class="container py-5">
+  <h2>Compétences</h2>
+  <div class="row g-4">
+    <div class="col-md-4"><div class="card"><div class="card-body"><h5>Data Science & ML</h5><p>Python, Pandas, Scikit-learn, TensorFlow</p></div></div></div>
+    <div class="col-md-4"><div class="card"><div class="card-body"><h5>Data Engineering</h5><p>ETL, PostgreSQL, MongoDB, Cassandra</p></div></div></div>
+    <div class="col-md-4"><div class="card"><div class="card-body"><h5>Développement Web</h5><p>Java, Spring Boot,Node.js, React.js, Angular</p></div></div></div>
+    <div class="col-md-4"><div class="card"><div class="card-body"><h5>DevOps</h5><p>Git,GitLab, CI/CD, Docker (notions)</p></div></div></div>
+    <div class="col-md-4"><div class="card"><div class="card-body"><h5>Base de données</h5><p>MySQL,PostgreSQL, MongoDB</p></div></div></div>
+  </div>
+</section>
+
+<!-- FORMATIONS -->
+<section id="formations" class="container py-5">
+  <h2 data-fr="Formations" data-en="Education"></h2>
+
+  <div class="card mt-3">
+    <div class="card-body">
+      <h5>Master Informatique – Génie Logiciel</h5>
+      <p>Université Assane Seck | 2022 – 2024</p>
+    </div>
+  </div>
+
+  <div class="card mt-3">
+    <div class="card-body">
+      <h5>Licence Informatique</h5>
+      <p>Université Assane Seck | 2018 – 2021</p>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATS (CONSERVÉS) -->
+
+<section id="certificats" class="container py-5">
+  <h2 class="mb-4">Certificats complémentaires</h2>
+  <div class="row g-4">
+
+    <!-- Data Analysis -->
+    <div class="col-md-6">
+      <div class="card h-100">
+        <img src="Certificat_Data_Analys.png" class="card-img-top" alt="Certificat Data Analysis">
+        <div class="card-body">
+          <h5 class="card-title">Certificat Data Analysis – FORCE-N Sénégal</h5>
+          <p class="card-text">
+            Formation en analyse de données : statistiques, nettoyage de données,
+            visualisation et exploitation des données avec Python.
+          </p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <a href="Certificat_Data_Analys.pdf" target="_blank" class="btn btn-outline-dark">Voir PDF</a>
+          <a href="Certificat_Data_Analys.pdf" download class="btn btn-success">Télécharger</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cisco Cybersecurity -->
+    <div class="col-md-6">
+      <div class="card h-100">
+        <img src="certificat_cisco.png" class="card-img-top" alt="Certificat Cisco Cybersécurité">
+        <div class="card-body">
+          <h5 class="card-title">Certificat Cybersécurité – Cisco</h5>
+          <p class="card-text">
+            Introduction à la cybersécurité : menaces globales, vulnérabilités,
+            sécurité des réseaux et bonnes pratiques.
+          </p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <a href="certificat_cisco.pdf" target="_blank" class="btn btn-outline-dark">Voir PDF</a>
+          <a href="certificat_cisco.pdf" download class="btn btn-success">Télécharger</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Full Stack -->
+    <div class="col-md-6">
+      <div class="card h-100">
+        <img src="certificat_fullstack.png" class="card-img-top" alt="Certificat Full Stack">
+        <div class="card-body">
+          <h5 class="card-title">Certificat Développeur Full Stack – EDACY / Talent4Startup</h5>
+          <p class="card-text">
+            Programme intensif en développement web Full Stack :
+            JavaScript, frameworks frontend, backend et gestion de projets.
+          </p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <a href="certificat_fullstack.pdf" target="_blank" class="btn btn-outline-dark">Voir PDF</a>
+          <a href="certificat_fullstack.pdf" download class="btn btn-success">Télécharger</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Frontend -->
+    <div class="col-md-6">
+      <div class="card h-100">
+        <img src="Certificat_devlopement_F_E.png" class="card-img-top" alt="Certificat Frontend">
+        <div class="card-body">
+          <h5 class="card-title">Certificat Développement Front-End – FORCE-N</h5>
+          <p class="card-text">
+            Développement d’interfaces web modernes :
+            HTML, CSS, JavaScript et bonnes pratiques UX/UI.
+          </p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <a href="Certificat_devloppement_F_E.pdf" target="_blank" class="btn btn-outline-dark">Voir PDF</a>
+          <a href="Certificat_devloppement_F_E.pdf" download class="btn btn-success">Télécharger</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- CONTACT -->
+<section id="contact" class="container py-5">
+  <h2>Contact</h2>
+  <p>Email : drame779576559@gmail.com</p>
+  <p>GitHub : <a href="https://github.com/Drame-moustapha" target="_blank">Drame-moustapha</a></p>
+  <p>LinkedIn : <a href="https://www.linkedin.com/in/moustaphadramekandji/" target="_blank">moustaphadramekandji</a></p>
+</section>
+
+<footer class="text-center py-3 border-top">
+  © <span id="year"></span> Moustapha DRAME
+</footer>
+
+<!-- Scripts -->
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  const langBtn = document.getElementById("lang-toggle");
+  let lang = localStorage.getItem("lang") || "fr";
+
+  function applyLang(l) {
+    document.querySelectorAll("[data-fr]").forEach(el => {
+      el.innerHTML = el.dataset[l];
+    });
+    langBtn.textContent = l === "fr" ? "🇫🇷 FR" : "🇬🇧 EN";
+    localStorage.setItem("lang", l);
+  }
+
+  langBtn.onclick = () => {
+    lang = lang === "fr" ? "en" : "fr";
+    applyLang(lang);
+  };
+
+  applyLang(lang);
+</script>
+
+</body>
+</html>
