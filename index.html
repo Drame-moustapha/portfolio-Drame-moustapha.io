@@ -340,43 +340,27 @@
 
   applyLang(lang);
 </script>
-  <script>
+ <script>
 function setTheme(theme){
 
   if(theme === "auto"){
-    localStorage.removeItem("theme");
-
     const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-    document.documentElement.setAttribute(
-      "data-bs-theme",
-      systemDark ? "dark" : "light"
-    );
-
+    document.documentElement.setAttribute("data-bs-theme", systemDark ? "dark" : "light");
+    localStorage.removeItem("theme");
   } else {
-    localStorage.setItem("theme", theme);
     document.documentElement.setAttribute("data-bs-theme", theme);
+    localStorage.setItem("theme", theme);
   }
 }
 
-/* LOAD THEME AU CHARGEMENT */
 (function(){
-
   const saved = localStorage.getItem("theme");
-
   if(saved){
     document.documentElement.setAttribute("data-bs-theme", saved);
   } else {
-    const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-    document.documentElement.setAttribute(
-      "data-bs-theme",
-      systemDark ? "dark" : "light"
-    );
+    setTheme("auto");
   }
-
 })();
 </script>
-
 </body>
 </html>
