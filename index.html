@@ -344,8 +344,8 @@
 function setTheme(theme){
 
   if(theme === "auto"){
-    const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    document.documentElement.setAttribute("data-bs-theme", systemDark ? "dark" : "light");
+    const systemDark = window.matchMedia("(prefers-color-scheme: light)").matches;
+    document.documentElement.setAttribute("data-bs-theme", systemDark ? "light" : "dark");
     localStorage.removeItem("theme");
   } else {
     document.documentElement.setAttribute("data-bs-theme", theme);
