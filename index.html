@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html  lang="fr" data-bs-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
@@ -9,32 +9,25 @@
   <link rel="stylesheet" href="portfolio.css" />
 </head>
 
-<body class="bg-[var(--bg)] text-[var(--text)] transition">
+<body >
 
 <!-- Header -->
-<header class="sticky-top bg-body-tertiary border-bottom">
+<header class="sticky-top border-bottom bg-body-tertiary">
 
   <nav class="navbar navbar-expand-lg">
 
     <div class="container">
 
-      <!-- BRAND -->
       <a class="navbar-brand fw-bold" href="#">
         Moustapha DRAME
       </a>
 
-      <!-- TOGGLER -->
       <button class="navbar-toggler" type="button"
         data-bs-toggle="collapse"
-        data-bs-target="#navbarContent"
-        aria-controls="navbarContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation">
-
+        data-bs-target="#navbarContent">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <!-- MENU -->
       <div class="collapse navbar-collapse" id="navbarContent">
 
         <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
@@ -46,15 +39,13 @@
           <li class="nav-item"><a class="nav-link" href="#formations">Formation</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
 
-          <!-- LANG -->
-          <li class="nav-item mt-2 mt-lg-0">
+          <li class="nav-item">
             <button id="lang-toggle" class="btn btn-outline-secondary btn-sm">
               🇫🇷 FR
             </button>
           </li>
 
-          <!-- THEME -->
-          <li class="nav-item dropdown mt-2 mt-lg-0 ms-lg-2">
+          <li class="nav-item dropdown">
 
             <button class="btn btn-outline-primary btn-sm dropdown-toggle"
               data-bs-toggle="dropdown">
@@ -62,25 +53,9 @@
             </button>
 
             <ul class="dropdown-menu dropdown-menu-end">
-
-              <li>
-                <button class="dropdown-item" onclick="setTheme('light')">
-                  ☀️ Light
-                </button>
-              </li>
-
-              <li>
-                <button class="dropdown-item" onclick="setTheme('dark')">
-                  🌙 Dark
-                </button>
-              </li>
-
-              <li>
-                <button class="dropdown-item" onclick="setTheme('auto')">
-                  💻 Auto
-                </button>
-              </li>
-
+              <li><button class="dropdown-item" onclick="setTheme('light')">☀️ Light</button></li>
+              <li><button class="dropdown-item" onclick="setTheme('dark')">🌙 Dark</button></li>
+              <li><button class="dropdown-item" onclick="setTheme('auto')">💻 Auto</button></li>
             </ul>
 
           </li>
@@ -88,10 +63,10 @@
         </ul>
 
       </div>
+
     </div>
   </nav>
 
-  </div>
 </header>
 
 <!-- Hero -->
